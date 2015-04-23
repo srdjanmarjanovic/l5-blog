@@ -12,9 +12,11 @@
 */
 
 //Route::get('/', 'HomeController@index');
-Route::get('/', 'HomeController@index');
+Route::get('/', 'PostsController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::resource('posts', 'PostsController');

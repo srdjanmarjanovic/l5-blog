@@ -1,5 +1,4 @@
 @extends('app')
-
 @section('content')
-
-@endsection
+    <h1>All posts</h1>
+@end

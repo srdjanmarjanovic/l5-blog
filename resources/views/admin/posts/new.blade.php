@@ -1,5 +1,4 @@
 @extends('app')
-
 @section('content')
-
-@endsection
+    <h1>New post form</h1>
+@stop

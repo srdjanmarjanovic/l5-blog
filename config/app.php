@@ -144,6 +144,9 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'App\Providers\ViewsComposerServiceProvider',
+		'App\Providers\SettingsServiceProvider',
+		'Orchestra\Imagine\ImagineServiceProvider',
 
 	],
 
@@ -192,7 +195,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-
+		'Imagine' => 'Orchestra\Imagine\Facade',
 	],
 
 ];
