@@ -11,4 +11,5 @@ class Post extends Model {
      */
     protected $fillable = array('title', 'url', 'status', 'type', 'body');
 
+
 }

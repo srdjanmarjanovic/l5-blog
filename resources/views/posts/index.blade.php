@@ -1,15 +1,12 @@
 @extends('app')
 
-{{--@section('pagetitle')--}}
-    {{--Test--}}
-{{--@stop--}}
-
 @section('content')
+
     @if($posts->count())
         @foreach($posts as $post)
             <div class="container">
                 <article>
-                    <h2><a href="{{ action('PostsController@show', $post->url) }}">{{ $post->title }}</a></h2>
+                    <h2><a href="{{ action('PostController@show', $post->url) }}">{{ $post->title }}</a></h2>
                     <small>{{ $post->created_at->diffForHumans()}}</small>
                     <hr/>
                     <div class="article-content">

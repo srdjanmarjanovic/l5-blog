@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
 			'posts', function ($t) {
 				$t->increments('id')->unsigned();
 				$t->string('title', 200);
-				$t->string('url', 200)->unique();
+				$t->string('url', 210)->unique();
 				$t->boolean('status');
 				$t->integer('type')->unsigned();
 				$t->foreign('type')->references('id')->on('post_types');

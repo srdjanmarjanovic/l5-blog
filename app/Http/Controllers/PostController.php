@@ -7,7 +7,7 @@ use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
-class PostsController extends Controller {
+class PostController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -28,8 +28,7 @@ class PostsController extends Controller {
 	 */
 	public function show($id)
 	{
-		$post = Post::findOrFail($id, 'url');
-
+		$post = Post::where('url', '=', $id)->andWhere('status', '=', 1)->first()->get();
 		dd($post);
 	}
 
